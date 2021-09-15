@@ -18,19 +18,18 @@ public class UserInterface {
 			op = sc.next();
 			System.out.println("Enter a number :");
 			num = sc.nextInt();
-			result = compute(op, num);
+			compute(op, num);
 		}
 
 	}
 
-	public int compute(String operation, int num) {
+	public void compute(String operation, int num) {
 		if (operation.equals("+"))
 			calc.add(num);
 		else
 			if (operation.equals("-"))
 				calc.substract(num);
 
-		return calc.getResult();
 
 	}
 
