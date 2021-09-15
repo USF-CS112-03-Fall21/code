@@ -21,7 +21,6 @@ public class UserInterface {
 			result = compute(op, num);
 		}
 
-		System.out.println(result);
 	}
 
 	public int compute(String operation, int num) {
@@ -35,9 +34,14 @@ public class UserInterface {
 
 	}
 
+	public void printFinalResult() {
+		System.out.println("The final result is " + calc.getResult());
+	}
+
 	public static void main(String[] args) {
 		UserInterface ui = new UserInterface();
 		ui.interactWithUser();
+		ui.printFinalResult();
 
 	}
 }
