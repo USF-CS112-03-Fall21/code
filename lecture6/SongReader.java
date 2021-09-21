@@ -11,7 +11,17 @@ public class SongReader {
 		File file = new File(filename);
 		try {
 			Scanner sc = new Scanner(file);
-			System.out.println(sc.nextLine());
+			String line;
+
+			while(sc.hasNextLine()) {
+			   line = sc.nextLine();
+			   // System.out.println(line);
+			   String[] words = line.split(" ");
+			   for (int i = 0; i < words.length; i++) {
+			   		System.out.println(words[i]);
+			   }
+		   } 
+
 		}
 		catch (IOException e) {
 			System.out.println(e);
