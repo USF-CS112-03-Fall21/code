@@ -1,4 +1,3 @@
-package exceptions;
 
 /**  Propagation.java       Author: Lewis/Loftus
  *  Demonstrates exception propagation. */
